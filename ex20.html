@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            margin: 0;
+            background-image: url("Rog\ background.jpg");
+            background-size: cover;
+        }
+        .video{
+            top:0%;
+            left:0%;
+            object-fit: cover;
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        .cart {
+            background: black;
+            color: white;
+            padding: 12px;
+            text-align: right;
+            font-size: 18px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        button {
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .buy-btn {
+            background: orange;
+            color: white;
+        }
+
+        .cart-btn {
+            background: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <video class="video" autoplay muted loop>
+        <source src="Asus_Rog____Animated_Wallpaper___4k(1080p).mp4">
+    </video>
+
+<div class="cart">
+    🛒 Cart Items: <span id="cartCount">0</span>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <img src="ASUS ROG Strix G16 Gaming Laptop.jpg">
+        <h3> ASUS ROG Strix G16 Gaming Laptop </h3>
+        <p>Price:₹2,19,990<br>
+           Specs: Intel Core Ultra 9 / AMD Ryzen 9; NVIDIA RTX 50-series GPU; 16″ 2.5K 240 Hz OLED; up to 16 GB+ RAM & 1 TB+ SSD.  
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus ROG Zephyrus G14 Gaming Laptop.jpg">
+        <h3>Asus ROG Zephyrus G14 Gaming Laptop
+        </h3>
+        <p>Price:₹1,84,990<br>
+            Specs: AMD Ryzen 9; NVIDIA RTX-series GPU; 14″ 3K OLED; up to 16 GB RAM & 1 TB SSD</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus ROG Zephyrus G14.jpg">
+        <h3>Asus ROG Zephyrus G14,Amd Ryzen 9</h3>
+        <p>Price:₹2,74,990<br>
+            Specs: Premium GPU/config upgrade version — more RAM/storage than base.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus ROG Strix SCAR 18.jpg">
+        <h3>Asus ROG Strix SCAR 18,Intel Core Ultra 9 275HX </h3>
+        <p>Price:₹4,49,990<br>
+            Specs: Intel Core Ultra 9; NVIDIA RTX 50-series GPU; 18″ high-refresh Mini-LED/OLED; massive power for AAA gaming.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="ROG Strix SCAR 16.jpg">
+        <h3>ROG Strix SCAR 16</h3>
+        <p>Price:₹4,01,990<br>
+            Specs: Intel Core Ultra 9 275HX, RTX 5080/5090; 32 GB RAM; 2 TB PCIe SSD; 16″ 2.5K 240 Hz display — top performance platform.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="ASUS TUF Gaming F16.jpg">
+        <h3>ASUS TUF Gaming F16</h3>
+        <p>₹Price:₹1,44,990<br>
+        Specs: Intel Core i7 / AMD equivalent, RTX 50-series GPU, 16″ 165 Hz IPS; robust build for gaming.0</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="ASUS TUF Gaming A16.jpg">
+        <h3>ASUS TUF Gaming A16</h3>
+        <p>Price:₹1,69,990<br>
+            Specs: Big 16″ 2.5K display, Ryzen 9, RTX 50-series; strong performance for gamers/creators.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="ASUS Vivobook 15 (X1504).jpg">
+        <h3>ASUS Vivobook 15 (X1504)</h3>
+        <p>Price: ~₹30,990<br>
+            Specs: Intel Core i3-13th Gen, 8 GB/16 GB RAM, 512 GB SSD, 15.6″ FHD; great value for students & work.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus Vivobook 14.jpg">
+        <h3>Asus Vivobook 14</h3>
+        <p>Price:₹67,990<br>
+            Specs: Intel/AMD options, 14″ FHD, up to 16 GB RAM & 512 GB SSD; lightweight daily driver.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="ASUS Vivobook 16.jpg">
+        <h3>ASUS Vivobook 16</h3>
+        <p>Price:₹64,990<br>
+            Specs:Intel Core 13th Gen Laptop, 16″ FHD, Intel Core 13th Gen, 16 GB RAM & 512 GB SSD; larger screen for productivity.
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus Vivobook S14 Flip 2025.jpg">
+        <h3>Asus Vivobook S14 Flip 2025</h3>
+        <p>Price:₹63,990<br>
+            Specs: 2-in-1 touchscreen convertible, Intel Core configs, 14″ versatile design.</p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="Asus TUF A15 2025.jpg">
+        <h3>Asus TUF A15 2025</h3>
+        <p>Price:₹72,200<br>
+            Specs:AMD Ryzen 7 7446 HS, Ge-Force RTX 3050 4GB, 16 GB Ram 1TB storage, Best for performance. 
+        </p>
+        <button class="buy-btn">BUY</button>
+        <button class="cart-btn"
+            onclick="document.getElementById('cartCount').innerText++">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
